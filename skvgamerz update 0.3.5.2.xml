@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.0.0' 
+    xmlns='http://www.w3.org/1999/xhtml' 
+    xmlns:b='http://www.google.com/2005/gml/b' 
+    xmlns:data='http://www.google.com/2005/gml/data' 
+    xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+    <!-- Meta Tags -->
+    <meta content='width=device-width, initial-scale=1' name='viewport' />
+    <title><b:eval expr='data:view.title.escaped'/></title>
+    <link href='https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&amp;display=swap' rel='stylesheet' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <!-- Visual Effects -->
+    <b:skin><![CDATA[
+      :root {
+--background-image: url('https://your-image-link.com/background.jpg');
+--background-size: cover;
+--background-position: center;
+        --main-color: #ff6f61;
+        --secondary-color: #333333;
+        --background-color: #ffffff;
+        --text-color: #48525c;
+        --link-color: #ff6f61;
+        --hover-color: #ff8578;
+        --menu-bg: #ffffff;
+        --menu-text: #3c3a3a;
+      }
+
+      body {
+        font-family: 'Barlow', sans-serif;
+        margin: 0;
+        background: var(--background-image) no-repeat center center fixed, var(--background-color);
+background-size: var(--background-size);
+
+        scroll-behavior: smooth;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--link-color);
+        transition: color 0.3s ease;
+      }
+
+      a:hover {
+        color: var(--hover-color);
+      }
+
+      /* Header */
+      .header {
+        background: linear-gradient(45deg, #ff6f61, #ff8578);
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .header h1 {
+        margin: 0;
+        font-size: 3em;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .header p {
+        font-size: 1.2em;
+      }
+
+      /* Sidebar */
+      .sidebar {
+        background: #f9f9f9;
+        padding: 20px;
+        margin: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      .widget-title {
+        font-size: 1.5em;
+        color: var(--main-color);
+        margin-bottom: 10px;
+      }
+
+      .widget-content a {
+        display: block;
+        margin: 5px 0;
+        color: var(--link-color);
+        font-size: 1.1em;
+        transition: transform 0.3s ease;
+      }
+
+      .widget-content a:hover {
+        transform: scale(1.05);
+      }
+
+      /* Footer */
+      .footer {
+        background: var(--secondary-color);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+      }
+
+      .footer .social-icons a {
+        color: white;
+        margin: 0 10px;
+        font-size: 1.5em;
+        transition: transform 0.3s ease;
+      }
+
+      .footer .social-icons a:hover {
+        transform: scale(1.2);
+      }
+
+      .social-icons {
+        margin-top: 10px;
+      }
+    ]]></b:skin>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div class="header">
+      <h1><data:view.title/></h1>
+      <p>Responsive Blogger Template</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <b:section class="blog-posts" id="main">
+        <b:widget id="Blog1" type="Blog" locked="true" title="Blog Posts" />
+      </b:section>
+    </div>
+
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+      <h2 class="widget-title">Recent Posts</h2>
+      <b:widget id="RecentPosts1" type="Feed" locked="false" title="Recent Posts" />
+      
+      <h2 class="widget-title">Popular Posts</h2>
+      <b:widget id="PopularPosts1" type="PopularPosts" locked="false" title="Popular Posts" />
+
+      <h2 class="widget-title">Follow Us</h2>
+      <div class="widget-content">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></div>
+
+      <h2 class="widget-title">Subscribe</h2>
+      <b:widget id="FollowByEmail" type="FollowByEmail" locked="false" title="Follow by Email" />
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <p>&amp;copy; 2024 <b:eval expr="data:blog.title"/>. All Rights Reserved.</p>
+      <p>Designed by Keerthivasan</p>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </body>
+</html>

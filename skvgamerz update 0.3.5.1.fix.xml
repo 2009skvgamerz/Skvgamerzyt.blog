@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.0.0' 
+    xmlns='http://www.w3.org/1999/xhtml' 
+    xmlns:b='http://www.google.com/2005/gml/b' 
+    xmlns:data='http://www.google.com/2005/gml/data' 
+    xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+    <!-- Meta Tags -->
+    <meta content='width=device-width, initial-scale=1' name='viewport' />
+    <title><b:eval expr='data:view.title.escaped'/></title>
+    <link href='https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&amp;display=swap' rel='stylesheet' />
+
+    <!-- Style Variables -->
+    <b:skin><![CDATA[
+      :root {
+        --main-color: #ff6f61;
+        --secondary-color: #333333;
+        --background-color: #ffffff;
+        --text-color: #48525c;
+        --link-color: #ff6f61;
+        --menu-bg: #ffffff;
+        --menu-text: #3c3a3a;
+      }
+
+      /* General Styles */
+      body {
+        font-family: 'Barlow', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: var(--background-color);
+        color: var(--text-color);
+      }
+      a {
+        text-decoration: none;
+        color: var(--link-color);
+      }
+      a:hover {
+        color: var(--main-color);
+      }
+
+      /* Header Styles */
+      .header {
+        background: linear-gradient(45deg, #ff6f61, #ff8578);
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 3em;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+      }
+      .header p {
+        font-size: 1.2em;
+        margin: 10px 0 0;
+      }
+
+      /* Menu Styles */
+      .menu {
+        display: flex;
+        justify-content: center;
+        background: var(--menu-bg);
+        padding: 10px 0;
+      }
+      .menu a {
+        margin: 0 15px;
+        color: var(--menu-text);
+        font-size: 1.1em;
+        transition: color 0.3s ease;
+      }
+      .menu a:hover {
+        color: var(--main-color);
+      }
+
+      /* Main Content */
+      .main {
+        padding: 20px;
+        background: #f9f9f9;
+      }
+
+      /* Footer Styles */
+      .footer {
+        background: var(--secondary-color);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+      }
+      .footer a {
+        color: white;
+        margin: 0 10px;
+        transition: transform 0.3s;
+      }
+      .footer a:hover {
+        transform: scale(1.1);
+      }
+    ]]></b:skin>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <h1><data:view.title/></h1>
+      <p>Responsive Blogger Template</p>
+    </div>
+
+    <!-- Menu -->
+    <div class="menu">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <b:section class="blog-posts" id="main">
+        <b:widget id="Blog1" type="Blog" locked="true" title="Blog Posts" />
+      </b:section>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>&amp;copy; 2024 <b:eval expr="data:blog.title"/>. All Rights Reserved.</p>
+      <p>Designed by Keerthivasan</p>
+    </div>
+  </body>
+</html>

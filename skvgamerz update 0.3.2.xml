@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.0.0' class='is-light' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<head>
+    <b:include name='theme-head'/>
+    <!-- Custom Meta Tag -->
+    <meta name="msvalidate.01" content="FB00363860AB4A736962B55F241C2489" />
+    
+    <!-- Custom Styles -->
+    <style>
+        /* General Styles */
+        body {
+            background-color: #f9f9f9;
+            color: #333333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        header, footer {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 10px;
+            color: #333333;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ff6f61;
+        }
+        .social-icons {
+            margin: 20px 0;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #ff6f61;
+            font-size: 24px;
+            display: inline-block;
+        }
+        .content {
+            padding: 20px;
+        }
+        footer {
+            font-size: 14px;
+            color: #888888;
+        }
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .social-icons a {
+                font-size: 20px;
+                margin: 0 5px;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SKV Gamerz</h1>
+        <p>Gaming, Streaming, and More!</p>
+    </header>
+    
+    <nav>
+        <a expr:href='data:blog.homepageUrl'>Home</a>
+        <a expr:href='data:blog.url + "about"'>About</a>
+        <a expr:href='data:blog.url + "contact"'>Contact</a>
+    </nav>
+    
+    <div class="social-icons">
+        <a href="https://www.youtube.com/yourchannelid" target="_blank" title="YouTube">
+            <img src='https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.eot#icon-youtube' alt='YouTube' style="width:24px;height:24px;">
+        </a>
+        <a href="https://www.instagram.com/skvgamerz" target="_blank" title="Instagram">
+            <img src='https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.eot#icon-instagram' alt='Instagram' style="width:24px;height:24px;">
+        </a>
+        <a href="https://twitter.com/skvgamerz" target="_blank" title="Twitter">
+            <img src='https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.eot#icon-twitter' alt='Twitter' style="width:24px;height:24px;">
+        </a>
+        <a href="https://www.facebook.com/skvgamerz" target="_blank" title="Facebook">
+            <img src='https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.eot#icon-facebook' alt='Facebook' style="width:24px;height:24px;">
+        </a>
+        <a href="https://www.tiktok.com/@skvgamerz" target="_blank" title="TikTok">
+            <img src='https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.eot#icon-tiktok' alt='TikTok' style="width:24px;height:24px;">
+        </a>
+        <a href="https://www.twitch.tv/skvgamerz" target="_blank" title="Twitch">
+            <img src='https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.eot#icon-twitch' alt='Twitch' style="width:24px;height:24px;">
+        </a>
+    </div>
+    
+    <div class="content">
+        <h2>Welcome to SKV Gamerz</h2>
+        <p>This is your hub for gaming content, live streams, and more. Stay tuned for updates!</p>
+        
+        <!-- Blogger Posts -->
+        <b:section class='main' id='main' showaddelement='no'>
+            <b:widget id='Blog1' locked='false' title='Blog Posts' type='Blog'/>
+        </b:section>
+    </div>
+    
+    <footer>
+        <p>© 2024 Keerthivasan. All rights reserved.</p>
+    </footer>
+</body>
+</html>

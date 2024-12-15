@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.0.0' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+    <meta content='width=device-width, initial-scale=1' name='viewport' />
+    <title><data:view.title.escaped/></title>
+    <b:include data='blog' name='all-head-content' />
+
+    <b:skin><![CDATA[
+      /* Header Styles */
+      .header {
+        background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Roboto', sans-serif;
+      }
+      .header h1 {
+        font-size: 2.5em;
+        margin: 0;
+        text-transform: uppercase;
+      }
+      .header p {
+        font-size: 1.2em;
+        color: #b8c6db;
+        margin-top: 5px;
+      }
+      /* Footer Styles */
+      .footer {
+        background: #0f2027;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+      }
+    ]]></b:skin>
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <b:section id='header' class='header' maxwidgets='1' showaddelement='no'>
+      <b:widget id='Header1' type='Header'>
+        <title type='text'>SKV Gamerz</title>
+        <description type='text'>Gaming Beyond Limits</description>
+      </b:widget>
+    </b:section>
+
+    <!-- Main Content Section -->
+    <b:section id='main' class='main' maxwidgets='10' showaddelement='yes'>
+      <b:widget id='Blog1' type='Blog' title='Blog Posts' />
+    </b:section>
+
+    <!-- Sidebar Section -->
+    <b:section id='sidebar' class='sidebar' maxwidgets='5' showaddelement='yes'>
+      <b:widget id='PopularPosts1' type='PopularPosts' title='Popular Posts' />
+      <b:widget id='FollowByEmail1' type='FollowByEmail' title='Subscribe' />
+      <b:widget id='Label1' type='Label' title='Categories' />
+    </b:section>
+
+    <!-- Footer Section -->
+    <b:section id='footer' class='footer' maxwidgets='1' showaddelement='no'>
+      <b:widget id='Footer1' type='HTML'>
+        <content>
+          <p>© 2024 SKV Gamerz. All Rights Reserved.</p>
+          <p>Designed and Maintained by Keerthivasan.</p>
+        </content>
+      </b:widget>
+    </b:section>
+  </body>
+</html>

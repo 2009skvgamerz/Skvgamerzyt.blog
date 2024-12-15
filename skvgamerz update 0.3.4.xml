@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title><data:view.title.escaped/></title>
+    <!-- Importing Fonts and Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <style>
+        /* SoraMac Variables */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: $(body.background.color);
+            color: $(body.text.color);
+        }
+        /* Header */
+        .header {
+            background: $(main.blog.color);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .header h1 {
+            font-size: 3em;
+        }
+        .header p {
+            color: $(main.dark.color);
+        }
+        /* Footer */
+        .footer {
+            background: $(footer.bg);
+            color: $(footer.color);
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <h1>SKV Gamerz</h1>
+        <p>Gaming Beyond Limits</p>
+    </div>
+    <!-- Main Content Section -->
+    <div class="main">
+        <h2>Welcome to SKV Gamerz</h2>
+        <p>Explore the latest gaming tips, tricks, and updates here!</p>
+    </div>
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>© 2024 SKV Gamerz. All Rights Reserved.</p>
+        <p>Designed and Maintained by Keerthivasan.</p>
+    </div>
+</body>
+</html>

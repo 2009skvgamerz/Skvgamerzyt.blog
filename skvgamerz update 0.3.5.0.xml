@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title><data:view.title.escaped/></title>
+    
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Barlow:wght@400;700&display=swap" rel="stylesheet" />
+    
+    <style>
+        /* SoraMac Variables */
+        :root {
+            --main-color: #ff6f61;
+            --dark-color: #333333;
+            --background-gradient: linear-gradient(to bottom, #f9f9f9, #ffffff);
+            --header-gradient: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+        }
+
+        /* General Body Styles */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: var(--background-gradient);
+            color: var(--dark-color);
+            transition: all 0.3s ease;
+        }
+
+        /* Header */
+        .header {
+            background: var(--header-gradient);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            animation: fadeIn 1s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .header h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+        .header p {
+            font-size: 1.4em;
+            margin: 10px 0;
+            color: #b8c6db;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            animation: slideInLeft 1s ease;
+        }
+        .sidebar h2 {
+            font-size: 1.8em;
+            color: var(--main-color);
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: var(--main-color);
+            display: block;
+            margin: 5px 0;
+            font-size: 1.2em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .sidebar a:hover {
+            color: var(--dark-color);
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+        .footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: transform 0.3s;
+        }
+        .footer .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInLeft {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <h1>SKV Gamerz</h1>
+        <p>Gaming Beyond Limits</p>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main">
+        <h2>Welcome to SKV Gamerz</h2>
+        <p>Explore the latest gaming tips, tricks, and updates here!</p>
+    </div>
+
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+        <h2>Popular Posts</h2>
+        <a href="#">Top 10 Racing Games</a>
+        <a href="#">Gaming Tips for Beginners</a>
+        <a href="#">Latest Updates</a>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>© 2024 SKV Gamerz. All Rights Reserved.</p>
+        <p>Designed and Maintained by Keerthivasan.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</body>
+</html>

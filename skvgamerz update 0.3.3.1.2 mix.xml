@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.0.0' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="msvalidate.01" content="FB00363860AB4A736962B55F241C2489" />
+    <title><data:view.title.escaped/></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <b:include data="blog" name="all-head-content" />
+    <style>
+      /* Universal Styles */
+      body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        background: #f9f9f9;
+        color: #333333;
+      }
+
+      /* Header Styles */
+      .header {
+        background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+      .header h1 {
+        font-size: 3em;
+        margin: 0;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+      }
+      .header p {
+        font-size: 1.4em;
+        margin: 10px 0 0;
+        color: #b8c6db;
+      }
+
+      /* Main Content Styles */
+      .main {
+        padding: 20px;
+      }
+
+      /* Sidebar Styles */
+      .sidebar {
+        background: white;
+        padding: 20px;
+        margin: 20px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .sidebar h2 {
+        font-size: 1.8em;
+        color: #203a43;
+        margin-bottom: 10px;
+      }
+      .sidebar a {
+        text-decoration: none;
+        color: #2c5364;
+        display: block;
+        margin: 5px 0;
+        font-size: 1.2em;
+      }
+      .sidebar a:hover {
+        color: #0f2027;
+        text-decoration: underline;
+      }
+
+      /* Footer Styles */
+      .footer {
+        background: #0f2027;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        position: relative;
+      }
+      .footer p {
+        margin: 5px 0;
+      }
+      .footer .social-icons {
+        margin: 10px 0;
+      }
+      .footer .social-icons a {
+        color: white;
+        margin: 0 10px;
+        font-size: 1.5em;
+        transition: transform 0.3s;
+      }
+      .footer .social-icons a:hover {
+        transform: scale(1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div class="header">
+      <h1>SKV Gamerz</h1>
+      <p>Gaming Beyond Limits</p>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main">
+      <h2>Welcome to SKV Gamerz</h2>
+      <p>Explore the latest gaming tips, tricks, and updates here!</p>
+    </div>
+
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+      <h2>Popular Posts</h2>
+      <a href="#">Top 10 Racing Games</a>
+      <a href="#">Gaming Tips for Beginners</a>
+      <a href="#">Latest Updates</a>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <p>© 2024 SKV Gamerz. All Rights Reserved.</p>
+      <p>Designed and Maintained by Keerthivasan.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </body>
+</html>
