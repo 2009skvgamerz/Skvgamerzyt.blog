@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Popup Widget</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: transparent;
+    }
+
+    /* Popup Overlay */
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    /* Popup Box */
+    .popup-box {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+    }
+
+    /* Close Button */
+    .close-btn {
+      background: #ff4c4c;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    /* Social Media Links */
+    .social-links a {
+      display: block;
+      margin: 10px 0;
+      color: #4ea5ff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Popup Container -->
+  <div class="popup-overlay" id="popup">
+    <div class="popup-box">
+      <h2>🚧 Website Under Development 🚧</h2>
+      <p>We're working hard to improve our website. Stay connected and support us by following our social media accounts!</p>
+      
+      <div class="social-links">
+        <a href="https://www.instagram.com/skvgamerzyt/" target="_blank">📷 Instagram</a>
+        <a href="https://x.com/skvgamerz_" target="_blank">🐦 Twitter</a>
+        <a href="https://www.youtube.com/@skvgamerzofficial" target="_blank">📺 YouTube</a>
+        <a href="https://www.facebook.com/Keerthivasan164/" target="_blank">📘 Facebook</a>
+        <a href="https://twitch.tv/skvgamerz/home" target="_blank">🎮 Twitch</a>
+      </div>
+
+      <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
